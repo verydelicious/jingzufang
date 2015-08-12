@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 背景层 -->
+    <item android:id="@android:id/background">
+
+        <!-- 形状为矩形 -->
+        <shape android:shape="line" >
+            <solid android:color="#FFf0f0f0" />
+
+            <!-- 圆角半径 -->
+            <corners android:radius="3dip" />
+
+            <!-- 绘制图形 -->
+            <!-- 边框颜色 -->
+            <stroke
+                android:width="2.5dip"
+                android:color="#FF828282" />
+        </shape>
+    </item>
+
+    <!-- 次要进度层 -->
+    <item android:id="@android:id/secondaryProgress">
+
+        <!-- 排列方式为水平 -->
+        <!-- 重心为左 -->
+        <clip
+            android:clipOrientation="horizontal"
+            android:gravity="left" >
+            <shape android:shape="line" >
+                <solid android:color="#FF828282" />
+
+                <!-- 圆角半径 -->
+                <corners android:radius="3dip" />
+
+                <!-- 绘制图形 -->
+                <!-- 边框颜色 -->
+                <stroke
+                    android:width="2.5dip"
+                    android:color="#e60025e0" />
+            </shape>
+        </clip>
+    </item>
+    <!-- 主要进度层 -->
+    <item>
+        <clip
+            android:clipOrientation="horizontal"
+            android:gravity="left" >
+            <shape android:shape="line" >
+                <solid android:color="#FF828282" />
+
+                <!-- 圆角半径 -->
+                <corners android:radius="3dip" />
+
+                <!-- 绘制图形 -->
+                <!-- 边框颜色 -->
+                <stroke
+                    android:width="2.5dip"
+                    android:color="#FF339ba3" />
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>

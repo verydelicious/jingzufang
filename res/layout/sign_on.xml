@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+    <com.jingzufang.view.Title
+        android:id="@+id/title2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+	<EditText 
+	    android:id="@+id/user_name"
+	    android:layout_margin="40dp"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:phoneNumber="true"
+	    android:maxLength="11"
+	    android:hint="请输入用户名或手机号"/>
+	<EditText 
+	    android:id="@+id/user_passwd"
+	    android:layout_marginLeft="40dp"
+	    android:layout_marginRight="40dp"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:password="true"
+	    android:maxLength="16"
+	    android:hint="请输入密码"/>
+	<Button
+	    android:layout_marginTop="20dp"
+            android:id="@+id/sign_on"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/item2"
+            android:text="登录"
+            android:textColor="#ffffff" />
+</LinearLayout>

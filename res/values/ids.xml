@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- id for bitmap util -->
+    <item name="bmd__image_downloader" type="id"/>
+    <!-- id for bitmap util -->
+
+</resources>

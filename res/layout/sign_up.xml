@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/main"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <com.jingzufang.view.Title
+        android:id="@+id/titlev"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:maxLength="11"
+        android:hint="请输入手机号码"
+        android:phoneNumber="true" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:maxLength="16"
+        android:hint="请设置6-16位密码"
+        android:password="true" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/item2"
+            android:text="注册"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/sign_up"
+            android:layout_alignEnd="@id/sign_up"
+            android:layout_below="@id/sign_up"
+            android:layout_marginTop="2dip"
+            android:text="手机号码仅用于获取验证码，不会向第三方公开。" />
+    </RelativeLayout>
+    <TextView 
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="已有账号？"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"/>
+    <Button 
+        android:id="@+id/login"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登录"
+        android:background="@drawable/button_signin"/>
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="*最终解释权由官方所有"
+        android:gravity="bottom|right"
+        android:layout_gravity="right"/>
+    
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="true"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center" >
+
+        <!-- <ImageView
+            android:id="@+id/shouye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+			android:contentDescription="@string/app_name"
+            android:src="@drawable/shouyeselected"
+            android:scaleType="fitXY" /> -->
+<!--             android:layout_below="@id/shouye" -->
+
+        <TextView
+            android:id="@+id/SY"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="首页"
+            android:background="#ff1c76fd"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center" >
+
+        <!-- <ImageView
+            android:id="@+id/gerenzhongxin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/grzxnormal" /> -->
+<!--             android:layout_below="@id/gerenzhongxin" -->
+
+        <TextView
+            android:id="@+id/GRZX"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="个人中心"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</LinearLayout>

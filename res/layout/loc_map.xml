@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#cccccccc"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioGroup
+            android:id="@+id/maptype"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/putong"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="普通图"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/weixing"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="卫星图"
+                android:textSize="18sp" />
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/jiaotong"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="交通图"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/repeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/l1"
+        android:text="Repeat" />
+
+    <Button
+        android:id="@+id/get_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/repeat"
+        android:layout_alignParentRight="true"
+        android:layout_alignStart="@id/repeat"
+        android:layout_below="@id/repeat"
+        android:onClick="getState"
+        android:text="State" />
+
+    <TextView
+        android:id="@+id/state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/repeat"
+        android:layout_toLeftOf="@id/repeat"
+        android:padding="2dip"
+        android:textSize="13sp" />
+
+</RelativeLayout>

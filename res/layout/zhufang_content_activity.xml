@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/zhufang_content_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:paddingBottom="2dip"
+        android:paddingTop="2dip" >
+
+        <ImageView
+            android:id="@+id/icon_break"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_margin="3dip"
+            android:scaleType="fitXY"
+            android:clickable="true"
+            android:background="@drawable/can_click_selector"
+            android:contentDescription="@string/action_settings"
+            android:src="@drawable/more_jiantou" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="房源详情"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/shouchang_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_margin="3dip"
+            android:clickable="true"
+            android:scaleType="fitXY"
+            android:background="@drawable/can_click_selector"
+             />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/fg1"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_below="@id/zhufang_content_title"
+        android:background="#ff000000" />
+    
+    <LinearLayout 
+        android:id="@+id/bottom_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <Button 
+            android:id="@+id/call_phone"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:drawableLeft="@drawable/call_phone"
+            android:text="拨打电话"
+            android:layout_marginBottom="2dip"
+            android:layout_marginLeft="10dip"
+            android:paddingTop="5dip"
+            android:paddingBottom="4dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"/>
+        <ImageView 
+            android:layout_weight="0.2"
+            android:layout_gravity="center"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            />
+        <Button 
+            android:id="@+id/shouchang_button"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:drawableLeft="@drawable/shouchang_selected"
+            android:text="收藏房源"
+            android:layout_marginBottom="5dip"
+            android:layout_marginRight="10dip"
+            android:paddingTop="4dip"
+            android:paddingBottom="4dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"/>
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/fg2"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_above="@id/bottom_linear"
+        android:layout_marginBottom="5dip"
+        android:background="#ff000000" />
+
+    <ScrollView
+        android:id="@+id/zhufang_content_scrollview"
+        android:layout_below="@id/fg1"
+        android:layout_above="@id/fg2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+    </ScrollView>
+
+</RelativeLayout>

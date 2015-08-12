@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:gravity="center" >
+
+    <com.jingzufang.view.Title
+        android:id="@+id/title4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_ti0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="right"
+            android:padding="10dp"
+            android:text="用户名: "
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/ed_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_ti0"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tv_ti0"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/tv_ti0"
+            android:background="@drawable/edittext_selector"
+            android:hint="请输入用户名" />
+
+        <TextView
+            android:id="@+id/tv_ti1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_ti0"
+            android:layout_alignRight="@+id/tv_ti0"
+            android:layout_below="@+id/tv_ti0"
+            android:layout_marginTop="20dp"
+            android:gravity="right"
+            android:padding="10dp"
+            android:text="性别: "
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:id="@+id/mod_rg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_ti1"
+            android:layout_alignLeft="@id/ed_0"
+            android:layout_alignTop="@id/tv_ti1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/man"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:layout_weight="1"
+                android:button="@drawable/point_radiobutton_selector"
+                android:text="男"
+                android:textColor="#000000" />
+
+            <RadioButton
+                android:id="@+id/woman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:layout_weight="1"
+                android:button="@drawable/point_radiobutton_selector"
+                android:text="女"
+                android:textColor="#000000" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/mod_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="20dip"
+        android:background="@drawable/button_background"
+        android:padding="10dip"
+        android:text="提交"
+        android:textSize="18sp" />
+
+</RelativeLayout>

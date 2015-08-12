@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffccd4db"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/a1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="2dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/nochuzu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_background"
+            android:drawableTop="@drawable/shouyeselected"
+            android:text="我要出租"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/nozufang"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button_background"
+            android:drawableTop="@drawable/shouyeselected"
+            android:text="我要租房"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/a1"
+        android:background="@color/disable_color" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="亲。你的网络不给力啊( ⊙ o ⊙ )"
+        android:textColor="#cc9f1e2d"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/app_wifi" />
+
+    <ProgressBar
+        android:id="@+id/jiazaixianshi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/shuaxintupian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/shuaxinziti"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/a016" />
+
+    <TextView
+        android:id="@+id/shuaxinziti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/jiazaixianshi"
+        android:layout_alignRight="@+id/imageView1"
+        android:layout_marginBottom="14dp"
+        android:layout_centerHorizontal="true"
+        android:text="点我刷新"
+        android:textSize="10dp" />
+
+</RelativeLayout>

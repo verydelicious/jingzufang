@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/abc" >
+    <com.jingzufang.view.Title
+        android:id="@+id/title1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:background="#99cccccc"
+	    android:layout_height="110dp">
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_centerVertical="true"
+        android:layout_margin="20dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/avatar"
+        />
+    <TextView 
+        android:id="@+id/name"
+        android:layout_alignTop="@+id/avatar"
+        android:layout_toRightOf="@+id/avatar"
+        android:layout_alignBottom="@+id/avatar"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:text="00000000000"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"/>
+    </RelativeLayout>
+    
+    <ListView 
+        android:layout_weight="1"
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:background="#99cccccc"
+        />
+    <Button 
+        android:id="@+id/out"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="退出登录"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:background="#ccfe9162"/>
+</LinearLayout>

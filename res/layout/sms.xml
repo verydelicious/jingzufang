@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <com.jingzufang.view.Title
+        android:id="@+id/title3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/mes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"
+        android:text="正在向xxxxxxxxxxx发送短信验证"
+        android:textColor="#000000"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/vernum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/mes"
+        android:layout_alignStart="@+id/mes"
+        android:layout_below="@+id/mes"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext_selector"
+        android:hint="请输入验证码"
+        android:maxLength="4"
+        android:padding="5dip"
+        android:phoneNumber="true" >
+    </EditText>
+
+    <Button
+        android:id="@+id/verify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/mes"
+        android:layout_alignStart="@+id/mes"
+        android:layout_below="@+id/vernum"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="3dip"
+        android:layout_marginRight="3dip"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_background"
+        android:text="提交"
+        android:textColor="#ff000000"
+        android:textSize="20dp" />
+
+</RelativeLayout>
