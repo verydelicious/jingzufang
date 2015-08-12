@@ -57,7 +57,7 @@ public class StartView extends Activity {
 		mLocationClient.setLocOption(option);// 使用设置
 		mLocationClient.start();// 开启定位SDK
 		mLocationClient.requestLocation();// 开始请求位置
-
+		//呵呵哒！！！！！！！！！！！！！！！！！！！！！！！！！！！！！
 	}
 
 	public class MyLocationListener implements BDLocationListener {
